@@ -5,7 +5,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <div className='px-4 md:px-8 py-5 lg:py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl'>
+        <div className='bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d]'>
+            <div className='px-4 md:px-8 py-5 lg:py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl'>
             <div className='relative flex items-center justify-between'>
                 <div className=''>
                     <h2 className='font-extrabold text-[#1A1919] text-3xl'>JobHub</h2>
@@ -25,7 +26,7 @@ const Header = () => {
                         <NavLink to='/blog' className={({ isActive }) => (isActive ? 'active' : 'default')}>Blog</NavLink>
                     </li>
                 </ul>
-                <button className='btn-primary hidden'>Star Applying</button>
+                <button className='btn-primary'>Star Applying</button>
 
                 <div className='lg:hidden'>
                     <button
@@ -75,6 +76,7 @@ const Header = () => {
                     )}
                 </div>
             </div>
+        </div>
         </div>
     );
 };

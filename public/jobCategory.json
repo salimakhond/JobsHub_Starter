@@ -1,0 +1,26 @@
+[
+    {
+    "id": "623853b2614ad5aba311fdd1",
+    "picture": "https://uxwing.com/wp-content/themes/uxwing/download/banking-finance/calculator-money-icon.png",
+    "name": "Account & Finance",
+    "jobsAvailable": "300 Jobs Available"
+    },
+    {
+    "id": "623853b2578e9e6ad1ae0dd5",
+    "picture": "https://cdn-icons-png.flaticon.com/512/107/107788.png",
+    "name": "Creative Design",
+    "jobsAvailable": "100+ Jobs Available"
+    },
+    {
+    "id": "623853b21fb149d2ee7b76c7",
+    "picture": "https://cdn-icons-png.flaticon.com/512/6601/6601840.png",
+    "name": "Marketing & Sales",
+    "jobsAvailable": "150 Jobs Available"
+    },
+    {
+    "id": "623853b2e91c8de578c9245e",
+    "picture": "https://cdn-icons-png.flaticon.com/512/2201/2201555.png",
+    "name": "Engineering Job",
+    "jobsAvailable": "224 Jobs Available"
+    }
+]
