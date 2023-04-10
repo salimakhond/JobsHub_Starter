@@ -19,7 +19,7 @@ const Home = () => {
     return (
         <div>
             <HeroArea></HeroArea>
-            <div className='px-4 md:px-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl my-32'>
+            <div className='container my-32'>
                 <div className='text-center mb-8'>
                     <h2 className='text-[#1A1919] text-4xl lg:text-5xl font-extrabold mb-4'>Job Category List</h2>
                     <p className='text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
@@ -31,7 +31,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='px-4 md:px-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl my-32'>
+            <div className='container my-32'>
                 <div className='text-center mb-8'>
                     <h2 className='text-[#1A1919] text-4xl lg:text-5xl font-extrabold mb-4'>Job Category List</h2>
                     <p className='text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
