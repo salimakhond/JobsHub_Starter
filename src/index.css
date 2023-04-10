@@ -16,7 +16,7 @@
   }
 
 .active{
-    @apply font-medium text-[#7E90FE] transition-colors duration-200
+    @apply font-bold text-[#7E90FE] transition-colors duration-200
   }
   
   .default{

@@ -1,9 +1,10 @@
 import React from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
 
 const Features = ({ feature }) => {
     // console.log(feature)
-    const { picture, title, companyName, type, location, time, salary } = feature
+    const { id, picture, title, companyName, type, location, time, salary } = feature
     return (
         <div className='p-10 border border-[#E8E8E8] rounded-lg'>
             <div className='inline-block mb-8'>
@@ -16,10 +17,13 @@ const Features = ({ feature }) => {
                 <span className='border border-[#7E90FE] px-5 py-2 rounded'>{time}</span>
             </p>
             <p className='text-[#757575] text-lg font-bold mb-6'>
-                <span className='mr-6'><MapPinIcon className="h-6 w-6 inline-block"/> {location}</span>
-                <span className=''><CurrencyDollarIcon className="h-6 w-6 inline-block"/> Salary : {salary}</span>
+                <span className='mr-6'><MapPinIcon className="h-6 w-6 inline-block" /> {location}</span>
+                <span className=''><CurrencyDollarIcon className="h-6 w-6 inline-block" /> Salary : {salary}</span>
             </p>
-            <button className='btn-primary px-4 lg:py-3 lg:font-bold'>View Details</button>
+
+            <Link to={`/jobDetails/${id}`}>
+                <button className='btn-primary px-4 lg:py-3 lg:font-bold'>View Details</button>
+            </Link>
         </div>
     );
 };
