@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { addToDb } from '../../utilities/fakedb';
 import { MapPinIcon, CurrencyDollarIcon, EnvelopeIcon, PhoneIcon, CalendarDaysIcon } from '@heroicons/react/24/solid'
+import toast from 'react-hot-toast';
 
 const JobDetails = () => {
     const dynamic = useParams();
@@ -8,7 +10,7 @@ const JobDetails = () => {
 
     const [featureDetails, setFeatureDetails] = useState({});
 
-    const { id, picture, title, companyName, type, location, time, salary, description, responsibility, requirements, experiences, email, phone } = featureDetails;
+    const { title, location, salary, description, responsibility, requirements, experiences, email, phone } = featureDetails;
 
     useEffect(() => {
         const exist = features.find(feature => feature.id == dynamic.id);
@@ -16,6 +18,12 @@ const JobDetails = () => {
             setFeatureDetails(exist);
         }
     }, [])
+
+
+    const handleAddToCart = featureDetails => {
+        addToDb(featureDetails.id);
+        toast.success('Product Added!', { autoClose: 500 })
+    }
 
 
     return (
@@ -57,7 +65,7 @@ const JobDetails = () => {
                         </p>
                     </div>
                 </div>
-                <button className='btn-primary mt-6 w-full'>Apply Now</button>
+                <button onClick={() => handleAddToCart(featureDetails)} className='btn-primary mt-6 w-full'>Apply Now</button>
             </div>
         </div>
     );

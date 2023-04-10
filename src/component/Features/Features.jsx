@@ -3,7 +3,6 @@ import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
 
 const Features = ({ feature }) => {
-    // console.log(feature)
     const { id, picture, title, companyName, type, location, time, salary } = feature
     return (
         <div className='p-10 border border-[#E8E8E8] rounded-lg'>
