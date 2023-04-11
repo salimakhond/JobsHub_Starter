@@ -4,6 +4,7 @@ import JobItem from '../JobItem/JobItem';
 import { getShoppingCart } from '../../utilities/fakedb';
 import vectorFirst from '../../assets/vector-1.png';
 import vectorSecond from '../../assets/vector.png';
+import FilterJobs from '../FilterJobs/FilterJobs';
 
 const AppliedJobs = () => {
     const features = useLoaderData();
@@ -24,6 +25,25 @@ const AppliedJobs = () => {
         }
     }, [features])
 
+
+   const [filterTextValue, setFilterTextValue] = useState('all')
+
+   let filteredJobs = cart.filter((job)=>{
+    if(filterTextValue === 'Remote'){
+        return job.type === 'Remote';
+    }
+    else if (filterTextValue === "Onsite"){
+        return job.type === 'Onsite';
+    }
+    else{
+        return job;
+    }
+   })
+
+    function onFilterValueSelected(filterValue){
+        setFilterTextValue(filterValue)
+    }
+
     return (
         <>
             <div className='bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d] py-28 pb-16 md:pb-20 lg:pt-48 lg:pb-32 relative'>
@@ -33,12 +53,13 @@ const AppliedJobs = () => {
             </div>
             <div className='container my-16 md:my-24 lg:my-32'>
                 <div className='text-end mb-8'>
-                    <button className='btn-primary px-4 lg:py-3 lg:font-bold mr-6'>Onsite</button>
-                    <button className='btn-primary px-4 lg:py-3 lg:font-bold'>Remote</button>
+                    {/* <button onClick={()=>handelOnsite(cart)} className='btn-primary px-4 lg:py-3 lg:font-bold mr-6'>Onsite</button>
+                    <button className='btn-primary px-4 lg:py-3 lg:font-bold'>Remote</button> */}
+                    <FilterJobs filterValueSelected={onFilterValueSelected}></FilterJobs>
                 </div>
                 <ul className='flex flex-col'>
                     {
-                        cart.map(feature => <JobItem key={feature.id} feature={feature}></JobItem>)
+                        filteredJobs.map(feature => <JobItem key={feature.id} feature={feature}></JobItem>)
                     }
                 </ul>
             </div>
