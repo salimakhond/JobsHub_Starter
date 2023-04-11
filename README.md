@@ -1,5 +1,5 @@
 # JobsHub Starter Repository
-Best Features in JobsHub project.
+Best Features in JobsHub Project List.
 
 * Navbar
 * Hero Area
@@ -15,10 +15,10 @@ Best Features in JobsHub project.
     * Statistics Page have my 8 assignment mark in a chart with tooltips.
 
 * Applied Jobs Page
-    * Applied Jobs Page have filter system you can filter remote & onsite jobs
+    * Applied Jobs Page have filter system you can filter remote & onsite jobs.
 
 * Blog Page
-    *Blog Page contains our Assignment-10 questions and answers.
+    * Blog Page contains our Assignment-10 questions and answers.
 * Footer
 
 ## Live Link
