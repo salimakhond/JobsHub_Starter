@@ -22,7 +22,7 @@ const JobDetails = () => {
 
     const handleAddToCart = featureDetails => {
         addToDb(featureDetails.id);
-        toast.success('Product Added!', { autoClose: 500 })
+        toast.success('Apply Done!', { autoClose: 500 })
     }
 
 

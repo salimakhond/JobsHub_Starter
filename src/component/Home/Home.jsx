@@ -15,6 +15,7 @@ const Home = () => {
 
 
     const features = useLoaderData();
+    const [seeAll, setSeeALl] = useState(false);
 
     return (
         <div>
@@ -38,7 +39,12 @@ const Home = () => {
                 </div>
                 <div className='grid lg:grid-cols-2 gap-6'>
                     {
-                        features.map(feature => <Features key={feature.id} feature={feature}></Features>)
+                        features.slice(0, seeAll ? 6 : 4).map(feature => <Features key={feature.id} feature={feature}></Features>)
+                    }
+                </div>
+                <div className='text-center mt-8'>
+                    {!seeAll &&
+                        <button onClick={setSeeALl} className='btn-primary'>See All Jobs</button>
                     }
                 </div>
             </div>
