@@ -9,7 +9,7 @@ const Header = () => {
             <div className='py-5 lg:py-10 container'>
                 <div className='relative flex items-center justify-between'>
                     <div className=''>
-                        <Link to='/'><h2 className='font-extrabold text-[#1A1919] text-3xl'>JobHub</h2></Link>
+                        <Link to='/'><h2 className='font-extrabold text-[#1A1919] text-3xl'>JobsHub</h2></Link>
                     </div>
                     <ul className='items-center hidden space-x-8 lg:flex'>
                         <li>
@@ -42,7 +42,7 @@ const Header = () => {
                                 <div className='p-5 bg-white border rounded shadow-sm'>
                                     <div className='flex items-center justify-between mb-4'>
                                         <div>
-                                            <Link to='/'><h2 className='font-extrabold text-[#1A1919] text-3xl'>JobHub</h2></Link>
+                                            <Link to='/'><h2 className='font-extrabold text-[#1A1919] text-3xl'>JobsHub</h2></Link>
                                         </div>
                                         <div>
                                             <button

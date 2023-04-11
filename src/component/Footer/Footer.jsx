@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='bg-[#1A1919] text-white py-32'>
+        <div className='bg-[#1A1919] text-white py-16 md:py-24 lg:py-32'>
             <div className='container'>
                 <div className='md:flex md:flex-wrap lg:flex-nowrap lg:gap-24 container bg-[#1A1919] text-white border-b border-[#7E90FE]'>
                     <div className='md:w-6/12 lg:w-4/12 mb-10'>
-                        <Link to='/'><h2 className='font-extrabold text-3xl mb-5'>JobHub</h2></Link>
+                        <Link to='/'><h2 className='font-extrabold text-3xl mb-5'>JobsHub</h2></Link>
                         <p className='mb-5 md:mr-10 lg:mr-0  text-[#ffffffb3]'>There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
                     </div>
                     <div className='md:w-6/12 lg:w-2/12 mb-10'>
@@ -46,8 +46,8 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className='flex justify-between text-[#ffffff66] pt-12'>
-                    <p>@2023 CareerHub. All Rights Reserved</p>
+                <div className='md:flex justify-between text-center text-[#ffffff66] pt-12'>
+                    <p className='mb-4 md:mb-0'>@2023 CareerHub. All Rights Reserved</p>
                     <p>Powered by CareerHub</p>
                 </div>
             </div>

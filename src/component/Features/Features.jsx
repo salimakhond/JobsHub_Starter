@@ -16,7 +16,7 @@ const Features = ({ feature }) => {
                 <span className='border border-[#7E90FE] px-5 py-2 rounded'>{time}</span>
             </p>
             <p className='text-[#757575] text-lg font-bold mb-6'>
-                <span className='mr-6'><MapPinIcon className="h-6 w-6 inline-block" /> {location}</span>
+                <span className='mr-6 block md:inline-block'><MapPinIcon className="h-6 w-6 inline-block" /> {location}</span>
                 <span className=''><CurrencyDollarIcon className="h-6 w-6 inline-block" /> Salary : {salary}</span>
             </p>
 

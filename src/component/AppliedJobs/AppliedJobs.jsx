@@ -23,7 +23,7 @@ const AppliedJobs = () => {
     }, [features])
 
     return (
-        <div className='container my-32'>
+        <div className='container my-16 md:my-24 lg:my-32'>
             <ul className='flex flex-col'>
                 {
                     cart.map(feature => <JobItem key={feature.id} feature={feature}></JobItem>)

@@ -27,14 +27,14 @@ const JobDetails = () => {
 
 
     return (
-        <div className='container my-32 flex gap-6'>
-            <div className='w-2/3'>
+        <div className='container my-16 md:my-24 lg:my-32 lg:flex lg:gap-6'>
+            <div className='lg:w-2/3'>
                 <h4 className='text-[#1A1919] font-extrabold text-lg mb-6'>Job Description: <span className='text-[#757575] font-medium text-base'>{description}</span></h4>
                 <h4 className='text-[#1A1919] font-extrabold text-lg mb-6'>Job Responsibility: <span className='text-[#757575] font-medium text-base'>{responsibility}</span></h4>
                 <h4 className='text-[#1A1919] font-extrabold text-lg mb-6'>Educational Requirements: <br /> <span className='text-[#757575] font-medium text-base'>{requirements}</span></h4>
                 <h4 className='text-[#1A1919] font-extrabold text-lg mb-6'>Experiences: <br /> <span className='text-[#757575] font-medium text-base'>{experiences}</span></h4>
             </div>
-            <div className='w-1/3'>
+            <div className='lg:w-1/3'>
                 <div className='bg-gradient-to-r from-[#7e90fe1a] to-[#9873ff1a] p-8 rounded-lg'>
                     <h4 className='text-[#1A1919] font-extrabold text-xl mb-6 pb-6 border-b border-[#7e90fe4d] '>Job Details</h4>
                     <div className='mb-8'>
