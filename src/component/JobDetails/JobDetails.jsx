@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { addToDb } from '../../utilities/fakedb';
-import { MapPinIcon, CurrencyDollarIcon, EnvelopeIcon, PhoneIcon, CalendarDaysIcon } from '@heroicons/react/24/solid'
+import { MapPinIcon, CurrencyDollarIcon, EnvelopeIcon, PhoneIcon, CalendarDaysIcon } from '@heroicons/react/24/solid';
 import toast from 'react-hot-toast';
 
 const JobDetails = () => {

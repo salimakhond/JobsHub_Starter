@@ -12,11 +12,13 @@ import Statistics from './component/Statistics/Statistics';
 import Blog from './component/Blog/Blog';
 import JobDetails from './component/JobDetails/JobDetails';
 import { Toaster } from 'react-hot-toast'
+import ErrorPage from './component/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
