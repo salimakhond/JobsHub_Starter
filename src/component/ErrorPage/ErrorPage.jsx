@@ -4,6 +4,7 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/solid';
 
 const ErrorPage = () => {
     const { error, status } = useRouteError();
+    console.log(status)
     return (
         <div className='flex items-center h-screen p-16 bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d] text-[#757575]'>
             <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>

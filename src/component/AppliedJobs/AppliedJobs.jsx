@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import JobItem from '../JobItem/JobItem';
 import { getShoppingCart } from '../../utilities/fakedb';
+import vectorFirst from '../../assets/vector-1.png';
+import vectorSecond from '../../assets/vector.png';
 
 const AppliedJobs = () => {
     const features = useLoaderData();
@@ -23,13 +25,24 @@ const AppliedJobs = () => {
     }, [features])
 
     return (
-        <div className='container my-16 md:my-24 lg:my-32'>
-            <ul className='flex flex-col'>
-                {
-                    cart.map(feature => <JobItem key={feature.id} feature={feature}></JobItem>)
-                }
-            </ul>
-        </div>
+        <>
+            <div className='bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d] py-28 pb-16 md:pb-20 lg:pt-48 lg:pb-32 relative'>
+                <h2 className='font-extrabold text-3xl text-[#1A1919] text-center'>Applied Jobs</h2>
+                <img className='absolute top-0 right-0 w-20 md:w-32 lg:w-80' src={vectorFirst} alt="" />
+                <img className='absolute bottom-0 left-0 w-20 md:w-32 lg:w-80' src={vectorSecond} alt="" />
+            </div>
+            <div className='container my-16 md:my-24 lg:my-32'>
+                <div className='text-end mb-8'>
+                    <button className='btn-primary px-4 lg:py-3 lg:font-bold mr-6'>Onsite</button>
+                    <button className='btn-primary px-4 lg:py-3 lg:font-bold'>Remote</button>
+                </div>
+                <ul className='flex flex-col'>
+                    {
+                        cart.map(feature => <JobItem key={feature.id} feature={feature}></JobItem>)
+                    }
+                </ul>
+            </div>
+        </>
     );
 };
 

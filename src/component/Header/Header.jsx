@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <div className='bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d]'>
+        <div className='absolute w-full top-0 left-0 z-10'>
             <div className='py-5 lg:py-10 container'>
                 <div className='relative flex items-center justify-between'>
                     <div className=''>
