@@ -23,7 +23,7 @@ const Home = () => {
             <div className='container my-16 md:my-24 lg:my-32'>
                 <div className='text-center mb-8'>
                     <h2 className='text-[#1A1919] text-4xl lg:text-5xl font-extrabold mb-4'>Job Category List</h2>
-                    <p className='text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                    <p className='text-[#757575]'>Explore thousands of job opportunities with all the information you need. It's your future.</p>
                 </div>
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
                     {
